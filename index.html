@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuzuTv!</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/Images/website/favicon.ico" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Uso de bootstrap para el header -->
+  <header>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="/assets/Images/website/logo.png" alt="logo" class="logo__header" id="logo_header" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <div class="navbar-nav align-items-center  justify-content-end">
+            <a class="nav-link" href="./schedule.html">Programación</a>
+            <a class="nav-link" href="./vlogs.html">Vlogs</a>
+            <a class="nav-link" href="./aboutus.html">Nosotros</a>
+            <a class="nav-link" href="./contactus.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <!-- Inicio de contenido del HTML -->
+      <div class="container-max">
+
+        <!-- Inicio de primera sección del grid-->
+        <section class="container-banner-main container-block">
+          <!-- Sección referente al título -->
+          <section class="container__tittle-index titles-bg-dark" id="container_tittle_index">
+            <h1 class="tittle__h1">La televisión online</h1>
+          </section>
+
+          <!-- Sección referente al banner principal -->
+          <section class="container__banner_main row" id="container_banner_main_index">
+            <div class="col-12">
+              <img src="./assets/Images/index/portada_2000.png" class="banner__main">
+            </div>
+          </section>
+        </section>
+
+        <section class="container-block">
+          <!-- Sección referente al banner secundario -->
+          <div class="container__section" id="container_section_programacion_index">
+            <div class="container_subtitle-index titles-bg-dark">
+              <h2 class="text__h2">Programación</h2>
+            </div>
+          </div>
+          <div class="container__section row">
+            <div class="col-12">
+              <a href="schedule.html">
+                <img src="./assets/Images/index/banner programacion.png" alt="Banner Principal de Programación index"
+                  class="banner__main" id="banner_programacion_index" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <!-- Sección referente a los enlaces de podcast -->
+        <section class="container__division container-block" id="container_division_index">
+          <div class="text__h3 container-text_channels">
+            <h3 class="text__p text_channels" id="text_division_index1">SUBSCRIBITE</h3>
+            <h3 class="text__p text_channels" id="text_division_index1">Y NO TE PIERDAS DE NADA</h3>
+          </div>
+          <div class="icons__to-channels row">
+            <div class="col-md-4 col-sm-12">
+              <a href="https://www.youtube.com/@luzutv" target="_blank">
+                <img src="./assets/Images/logos/big/youtube2.png" alt="Canal de Youtube" title="Ir al canal de YouTube"
+                  class="icon_big" id="icon_youtube_index" />
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <a href="https://www.twitch.tv/luzu_tv?lang=es" target="_blank">
+                <img src="./assets/Images/logos/big/twitch2.png" alt="Canal de Twitch" class="icon_big"
+                  title="Ir al canal de Twitch" id="icon_twitch_index" />
+              </a>
+            </div>
+            <div class="col-md-4 col-sm-12">
+              <a href="https://open.spotify.com/user/g3v5ig2ziph2z2oyo6facnx1j?si=abb2a2642bd5486e&nd=1"
+                target="_blank">
+                <img src="./assets/Images/logos/big/spotify2.png" alt="Canal de Spotify" title="Ir a Spotify"
+                  class="icon_big" id="icon_spotify_index" />
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+  </main>
+
+  <!-- Uso de bootstrap para el footer -->
+  <footer class="text-center footer-style">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <h4>Seguinos para más...</h4>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.instagram.com/luzutv/" target="_blank" class="container_icon_small_redes_footer"
+                id="container_icon_ig_footer">
+                <img src="./assets/Images/logos/small/instagram.png" alt="ícono de Instagram"
+                  title="Ir al perfil de Instagram" class="icon_small_redes_footer" id="icon_instagram_footer" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/luzu_tv?lang=es" target="_blank" class="container_icon_small_redes_footer"
+                id="container_icon_tt_footer">
+                <img src="./assets/Images/logos/small/twitter.png" alt="ícono de Twittter"
+                  title="Ir al perfil de Twittter" class="icon_small_redes_footer" id="icon_twitter_footer" />
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@luzutvok" target="_blank" class="container_icon_small_footer"
+                id="container_icon_tk_redes_footer">
+                <img src="./assets/Images/logos/small/tiktok.png" alt="ícono de Tiktok" title="Ir al perfil de TikTok"
+                  class="icon_small_redes_footer" id="icon_tiktok_footer" />
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Proyecto</h4>
+          <p>
+            CoderHouse <br />
+          </p>
+          <p class="btn btn-outline-light" id="boton-github">
+            <a href="https://github.com/joaldanaendo" target="_blank">
+              github @joaldanaendo</a>
+          </p>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Contactanos</h4>
+          <ul class="list-inline">
+            <li>
+              <span><a href="https://api.whatsapp.com/send?phone=541154740668" target="_blank"
+                  class="container_icon_small_contacto_footer" id="container_icon_whastapp1_footer">
+                  <img src="./assets/Images/logos/small/whatsapp.png" alt="ícono de whatsapp" title="Escribí al canal"
+                    class="icon_small_contacto_footer" id="icon_whastapp1_footer" /></a>
+                <span class="text_footer" id="text_footer_wtsp1">Canal 11 6677 5566</span>
+              </span>
+            </li>
+            <li>
+              <span><a href="https://api.whatsapp.com/send?phone=541154740668" target="_blank"
+                  class="container_icon_small_contacto_footer" id="container_icon_whastapp2_footer">
+                  <img src="./assets/Images/logos/small/whatsapp.png" alt="ícono de whatsapp"
+                    title="Mandanos tu audio al vivo" class="icon_small_contacto_footer"
+                    id="icon_whastapp2_footer" /></a>
+                <span class="text_footer" id="text_footer_wtsp2">Audios 11 5474 0668</span>
+              </span>
+            </li>
+            <li>
+              <span><a href="mailto:INFO@LUZU.COM.AR" target="_blank" class="container_icon_small_contacto_footer"
+                  id="mail">
+                  <img src="./assets/Images/logos/small/email.png" alt="ícono de mail"
+                    class="icon_small_contacto_footer" id="icon_mail_footer"></span></a>
+              <span class="text_footer" id="text_footer_mail">INFO@LUZU.COM.AR</span>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para poder aplicar bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

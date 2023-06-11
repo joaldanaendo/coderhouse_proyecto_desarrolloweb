@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LuzuTv! - Contacto</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./assets/Images/website/favicon.ico" />
+  <link rel="stylesheet" href="./css/bootstrap.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+  <!-- Uso de bootstrap para el menu -->
+  <header>
+    <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./index.html">
+          <img src="/assets/Images/website/logo.png" alt="logo" class="logo__header" id="logo_header" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+          aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="menu">
+          <div class="navbar-nav align-items-center  justify-content-end">
+            <a class="nav-link" href="./schedule.html">Programación</a>
+            <a class="nav-link" href="./vlogs.html">Vlogs</a>
+            <a class="nav-link" href="./aboutus.html">Nosotros</a>
+            <a class="nav-link" href="./contactus.html">Contacto</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div>
+      <div class="container-max">
+        <!-- Sección referente a la cabecera del formulario -->
+        <section class="container-banner-main container-block container-main">
+          <!-- Sección referente al contenido del título -->
+          <section class="container__tittle-contactus titles-bg-light text-center pt-1" id="container_tittle_aboutus">
+            <h1 class="tittle__h1">¿Querés contactarte con nosotros?</h1>
+          </section>
+        </section>
+
+        <section class="container-banner-main container-block container-main">
+          <!-- Sección referente al contenido del título -->
+          <section class="container__text-contactus titles-bg-light text-center pt-1" id="container_tittle_aboutus">
+            <p class="text_contactus">LuzuTv somos todos y qué mejor para crecer cada día que contar con tu opinión =)
+            </p>
+          </section>
+        </section>
+
+        <!-- Formulario -->
+        <div class="container__section-form">
+          <section class="container__section" id="container_section_form_contactus">
+            <form action="[HACIA DÓNDE VA LA INFORMACIÓN.PHP]" method="post" enctype="text/plain">
+
+              <h3 class="text__subtittle text_form">Contanos sobre vos...</h3>
+
+              <label for="nombre">
+                <h5 class="text_form">¿Cuál es tu nombre?*</h5>
+                <input type="text" id="nombre" placeholder="Escribí tu nombre" autocomplete="name" required>
+              </label>
+              <br>
+              <label for="mail">
+                <h5 class="text_form">¿Cuál es tu correo?*</h5>
+                <input type="email" id="mail" placeholder="Escribí tu correo" autocomplete="email" required>
+              </label>
+              <br>
+              <label for="cumple">
+                <h5 class="text_form">¿Cuándo es tu cumpleaños?*</h5>
+                <input type="date" id="cumple" autocomplete="bday" required>
+              </label>
+              <br>
+              <label for="horario">
+                <h5 class="text_form">¿En qué horario nos ves?</h5>
+                <input type="time" id="horario">
+              </label>
+              <br>
+              <br>
+              <h5 class="text_form">¿Qué nuevo contenido te gustaría ver en LuzuTv?</h5>
+              <label class="checkbox text_form"><input type="checkbox" name="deportes">Deportes</label>
+              <label class="checkbox text_form"><input type="checkbox" name="noticias">Noticias</label>
+              <label class="checkbox text_form"><input type="checkbox" name="viajes">Viajes</label>
+              <label class="checkbox text_form"><input type="checkbox" name="cocina">Cocina</label>
+
+              <p>
+              <h5 class="text_form">¿Por dónde nos ves?</h5>
+              <input type="radio" name="medio" value="youtube" class="radio"><span class="text_form"> YouTube</span>
+              <input type="radio" name="medio" value="twitch" class="radio"> <span class="text_form"> Twitch</span>
+              <input type="radio" name="medio" value="spotify" class="radio"> <span class="text_form"> Spotify</span>
+              </p>
+              </select>
+              <label for="mensaje">
+                <h5 class="text_form">Dejanos un mensaje</h5>
+                <textarea name="mensaje" id="formulario_mensaje" cols="75" rows="10"></textarea>
+              </label>
+              <fieldset>
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <button type="reset" class="btn btn-danger">Borrar</button>
+              </fieldset>
+
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Uso de bootstrap para el footer -->
+  <footer class="text-center footer-style">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 footer-col">
+          <h4>Seguinos para más...</h4>
+          <ul class="list-inline">
+            <li>
+              <a href="https://www.instagram.com/luzutv/" target="_blank" class="container_icon_small_redes_footer"
+                id="container_icon_ig_footer">
+                <img src="./assets/Images/logos/small/instagram.png" alt="ícono de Instagram"
+                  title="Ir al perfil de Instagram" class="icon_small_redes_footer" id="icon_instagram_footer" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/luzu_tv?lang=es" target="_blank" class="container_icon_small_redes_footer"
+                id="container_icon_tt_footer">
+                <img src="./assets/Images/logos/small/twitter.png" alt="ícono de Twittter"
+                  title="Ir al perfil de Twittter" class="icon_small_redes_footer" id="icon_twitter_footer" />
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@luzutvok" target="_blank" class="container_icon_small_footer"
+                id="container_icon_tk_redes_footer">
+                <img src="./assets/Images/logos/small/tiktok.png" alt="ícono de Tiktok" title="Ir al perfil de TikTok"
+                  class="icon_small_redes_footer" id="icon_tiktok_footer" />
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Proyecto</h4>
+          <p>
+            CoderHouse <br />
+          </p>
+          <p class="btn btn-outline-light" id="boton-github">
+            <a href="https://github.com/joaldanaendo" target="_blank">
+              github @joaldanaendo</a>
+          </p>
+        </div>
+        <div class="col-md-4 footer-col">
+          <h4>Contactanos</h4>
+          <ul class="list-inline">
+            <li>
+              <span><a href="https://api.whatsapp.com/send?phone=541154740668" target="_blank"
+                  class="container_icon_small_contacto_footer" id="container_icon_whastapp1_footer">
+                  <img src="./assets/Images/logos/small/whatsapp.png" alt="ícono de whatsapp" title="Escribí al canal"
+                    class="icon_small_contacto_footer" id="icon_whastapp1_footer" /></a>
+                <span class="text_footer" id="text_footer_wtsp1">Canal 11 6677 5566</span>
+              </span>
+            </li>
+            <li>
+              <span><a href="https://api.whatsapp.com/send?phone=541154740668" target="_blank"
+                  class="container_icon_small_contacto_footer" id="container_icon_whastapp2_footer">
+                  <img src="./assets/Images/logos/small/whatsapp.png" alt="ícono de whatsapp"
+                    title="Mandanos tu audio al vivo" class="icon_small_contacto_footer"
+                    id="icon_whastapp2_footer" /></a>
+                <span class="text_footer" id="text_footer_wtsp2">Audios 11 5474 0668</span>
+              </span>
+            </li>
+            <li>
+              <span><a href="mailto:INFO@LUZU.COM.AR" target="_blank" class="container_icon_small_contacto_footer"
+                  id="mail">
+                  <img src="./assets/Images/logos/small/email.png" alt="ícono de mail"
+                    class="icon_small_contacto_footer" id="icon_mail_footer"></span></a>
+              <span class="text_footer" id="text_footer_mail">INFO@LUZU.COM.AR</span>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a target="_blank" href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script para poder aplicar bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
