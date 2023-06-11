@@ -38,12 +38,12 @@
   <main>
 
     <div>
-      <div class="container-max">
+      <div class="container-max container-form">
         <!-- Sección referente a la cabecera del formulario -->
         <section class="container-banner-main container-block container-main">
           <!-- Sección referente al contenido del título -->
           <section class="container__tittle-contactus titles-bg-light text-center pt-1" id="container_tittle_aboutus">
-            <h1 class="tittle__h1">¿Querés contactarte con nosotros?</h1>
+            <h1 class="tittle__h1">¿Querés contactarte?</h1>
           </section>
         </section>
 
@@ -52,60 +52,81 @@
           <section class="container__text-contactus titles-bg-light text-center pt-1" id="container_tittle_aboutus">
             <p class="text_contactus">LuzuTv somos todos y qué mejor para crecer cada día que contar con tu opinión =)
             </p>
+            <p class="text_contactus">Y si tenés entrada para el show de Nadie Dice Nada en Córdoba, este 14 de julio,
+              dejanos tus datos para
+              que seas parte del show en vivo.</p>
           </section>
         </section>
 
         <!-- Formulario -->
-        <div class="container__section-form">
-          <section class="container__section" id="container_section_form_contactus">
-            <form action="[HACIA DÓNDE VA LA INFORMACIÓN.PHP]" method="post" enctype="text/plain">
-
-              <h3 class="text__subtittle text_form">Contanos sobre vos...</h3>
-
+        <div class="container__section-form container">
+          <section class="container__section row" id="container_section_form_contactus">
+            <form action="" method="post" enctype="text/plain">
               <label for="nombre">
-                <h5 class="text_form">¿Cuál es tu nombre?*</h5>
-                <input type="text" id="nombre" placeholder="Escribí tu nombre" autocomplete="name" required>
+                <div class="text_form col-12">¿Cuál es tu nombre?</div>
+                <input type="text" id="nombre" placeholder="Ingresá tu nombre" autocomplete="name" required>
               </label>
-              <br>
-              <label for="mail">
-                <h5 class="text_form">¿Cuál es tu correo?*</h5>
-                <input type="email" id="mail" placeholder="Escribí tu correo" autocomplete="email" required>
-              </label>
-              <br>
-              <label for="cumple">
-                <h5 class="text_form">¿Cuándo es tu cumpleaños?*</h5>
-                <input type="date" id="cumple" autocomplete="bday" required>
-              </label>
-              <br>
-              <label for="horario">
-                <h5 class="text_form">¿En qué horario nos ves?</h5>
-                <input type="time" id="horario">
-              </label>
-              <br>
-              <br>
-              <h5 class="text_form">¿Qué nuevo contenido te gustaría ver en LuzuTv?</h5>
-              <label class="checkbox text_form"><input type="checkbox" name="deportes">Deportes</label>
-              <label class="checkbox text_form"><input type="checkbox" name="noticias">Noticias</label>
-              <label class="checkbox text_form"><input type="checkbox" name="viajes">Viajes</label>
-              <label class="checkbox text_form"><input type="checkbox" name="cocina">Cocina</label>
 
-              <p>
-              <h5 class="text_form">¿Por dónde nos ves?</h5>
-              <input type="radio" name="medio" value="youtube" class="radio"><span class="text_form"> YouTube</span>
-              <input type="radio" name="medio" value="twitch" class="radio"> <span class="text_form"> Twitch</span>
-              <input type="radio" name="medio" value="spotify" class="radio"> <span class="text_form"> Spotify</span>
-              </p>
-              </select>
-              <label for="mensaje">
-                <h5 class="text_form">Dejanos un mensaje</h5>
-                <textarea name="mensaje" id="formulario_mensaje" cols="75" rows="10"></textarea>
+              <label for="email">
+                <div class="text_form col-12">¿Cuál es tu correo?</div>
+                <input type="email" id="nombre" placeholder="Ingresá tu correo" autocomplete="email" required>
               </label>
-              <fieldset>
-                <button type="submit" class="btn btn-success">Enviar</button>
-                <button type="reset" class="btn btn-danger">Borrar</button>
-              </fieldset>
+
+              <label for="calendario">
+                <div class="text_form">¿Cuándo naciste?</div>
+                <input type="date" id="calendario" required>
+              </label>
+
+              <label for="ticket">
+                <div class="text_form col-12 check">¿Marcá si tenés entrada para el show en Córdoba?</div>
+                <input type="checkbox" name="ticket">
+              </label>
+
+              <div>
+                <label for="textarea" class="text_form form-label">Dejanos un mensaje</label>
+                <textarea class="form-control" id="textarea"></textarea>
+              </div>
+              <br>
+              <button type="submit" class="btn btn-success">Enviar</button>
+              <button type="reset" class="btn btn-danger">Borrar</button>
 
             </form>
+
+            <div>
+              <div class="info_extra">
+                <p class="text_form" id="text_info_extra">Y si te quedaste con las ganas de marcar el check, comprá aquí
+                  tu entradas, y nois
+                  vemos el 14... Y HOOOY, NADIE DICE NADA...</p>
+              </div>
+
+
+            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Ir al evento </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+              aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Nadie Dice Nada en Córdoba</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <a href="https://www.ticketek.com.ar/nadie-dice-nada/quality-arena" target="_blank">
+                      <img src="./assets/Images/contactus/show-sm.jpg" alt="Afiche de show en Córdoba">
+                    </a>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
           </section>
         </div>
       </div>

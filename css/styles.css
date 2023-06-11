@@ -175,6 +175,8 @@ body {
 
 .container-article {
   background-color: var(--color-mode-dark);
+  width: 100%;
+  align-items: center;
   color: var(--light-basic-color);
   margin: 10px 20px;
   opacity: 0.9;
@@ -191,6 +193,11 @@ body {
   justify-content: center;
   text-align: justify;
   padding: 10px 35px;
+}
+
+.container-article-text {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 
@@ -235,6 +242,12 @@ div.card.card-aboutus {
 /* Estilos de contactus */
 /* ******************************************* */
 
+.container-form {}
+
+form {
+  margin-bottom: 3%;
+}
+
 .container__tittle-contactus {
   background-color: #F7C317;
 }
@@ -245,47 +258,65 @@ div.card.card-aboutus {
 
 .text_contactus {
   color: var(--color-mode-dark);
-  padding-right: 15px;
+  padding-right: 10px;
   text-align: center;
 }
 
 .container__section-form {
   background-image: url(../assets/Images/background/style_comic-light.jpg);
-  padding: 15px;
+  padding: 3%;
   border-radius: 2%;
   border-start-end-radius: 15%;
   border: 3px solid var(--color-mode-dark);
+  font-size: x-large;
 }
 
-div.text_form,
-h3.text_form,
-h5.text_form,
-label.checkbox.text_form,
-span.text_form {
+input#nombre,
+.text_form {
   color: var(--color-mode-dark);
-  font-weight: bold;
+  padding-top: 2%;
 }
 
-label.checkbox.text_form,
-span.text_form {
-  font-weight: bold;
-  margin-left: 3px;
+
+input[type=checkbox] {
+  /* Doble-tamaño Checkboxes */
+  -ms-transform: scale(2);
+  /* IE */
+  -moz-transform: scale(2);
+  /* FF */
+  -webkit-transform: scale(2);
+  /* Safari y Chrome */
+  -o-transform: scale(2);
+  /* Opera */
+  padding: 10px;
+  margin-left: 3%;
 }
 
-.checkbox,
-.radio {
-  margin-left: 5px;
-  margin-right: 1px;
+.checkboxtexto {
+  /* Checkbox texto */
+  font-size: 110%;
+  display: inline;
 }
 
-label {
-  margin-top: 15px;
+input#calendario {
+  color: var(--color-mode-dark);
 }
 
-input {
-  background-color: var(--light-basic-color);
-  border-radius: 10%;
-  border: 2px solid var(--color-mode-dark);
+.info_extra {
+  border: 3px solid var(--color-mode-dark);
+  border-radius: 2%;
+  background-color: var(--color-mode-dark);
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 3%;
+}
+
+#text_info_extra {
+  color: var(--light-basic-color);
+}
+
+.modal-content {
+  background-color: var(--color-mode-dark);
 }
 
 
